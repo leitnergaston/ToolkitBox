@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+
+    /* HUE COLOR */
+    --hue-color: 189;
+
+    /* COLORES */
+    --body-color: hsl(var(--hue-color), 86%, 31%);
+    --skin-color: hsl(246, 59%, 54%);
+    --title-color: hsl(var(var(--hue-color), 8%, 95%));
+    --text-color: hsl(var(--hue-color), 8%, 85%);
+
+    /* FONT AND TYPOGRAPHY */
+    --body-font: 'Poppins', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px... */
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /* FONT WEIGHT */
+    --font-medium: 500;
+    --font-bold: 600;
+
+}
+
+/*==================== BASE ====================  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    /* cursor: url('../img/cursors/aero_arrow.cur'), pointer; */
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}
+
+hr {
+    border: 1px solid var(--skin-color);
+}
+
+/* ==================== BUTTONS ==================== */
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    padding: .75rem 1.4rem;
+    border-radius: .25rem;
+    font-weight: var(--font-medium);
+    position: relative;
+    z-index: 1;
+}
+
+.button::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #343a40;
+    z-index: -1;
+    transform-origin: center;
+    transform: scale(0);
+    border-radius: .25rem;
+    transition: .3s;
+}
+
+.button:hover::after {
+    transform: scale(1);
+}
+
+.button-icon {
+    font-size: 1.25rem;
+}
+
+/* ==================== LAYOUT ==================== */
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* ==================== Tools ==================== */
+.section-herramientas {
+    padding: 2rem;
+}
+
+.section-herramientas header {
+    margin-bottom: 1rem;
+}
+
+.container-tools {
+    padding: 1rem 0;
+}
+
+.section-herramientas .miniSubtitle,
+.section-herramientas .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-tools {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+
+.div-tool {
+    border: 2px solid red;
+}
