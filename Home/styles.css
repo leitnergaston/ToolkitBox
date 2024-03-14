@@ -138,6 +138,15 @@ hr {
     padding: 2rem;
 }
 
+.proximamente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    font-size: 2rem;
+}
+
 .section-herramientas header {
     margin-bottom: 1rem;
 }
