@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Normal</title>
     <link rel="stylesheet" href="stylest1.css">
 </head>
+
 <body>
-    <h2>Esta es una calculadora normal</h2>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/Home/index.html">Volver al Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <article class="calculadoraBox">
+                <div class="pantalla">0</div>
+                <div class="operadores">
+                    <button class="operador" data-action="add">+</button>
+                    <button class="operador" data-action="subtract">-</button>
+                    <button class="operador" data-action="multiply">&times;</button>
+                    <button class="operador" data-action="divide">/</button>
+                </div>
+                <div class="digitos">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>0</button>
+                    <button data-action="decimal">.</button>
+                    <button data-action="clear">AC</button>
+                </div>
+                <button class="igual" data-action="calculate">=</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
 
     <script src="maint1.js"></script>
 </body>
+
 </html>

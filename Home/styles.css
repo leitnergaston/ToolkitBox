@@ -108,12 +108,16 @@ hr {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #343a40;
+    background-color: #4f89c2;
     z-index: -1;
     transform-origin: center;
     transform: scale(0);
     border-radius: .25rem;
     transition: .3s;
+}
+
+.button a {
+    color: white;
 }
 
 .button:hover::after {
@@ -131,6 +135,45 @@ hr {
     margin-right: auto;
 }
 
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    background-color: #4f89c25d;
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.listItem {
+    padding: .5rem;
+}
+
+.item {
+    padding: 0 .5rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .2s ease;
+    border: 1px solid;
+    color: #e6e6e6;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 4px black;
+}
 
 
 /* ==================== Tools ==================== */
@@ -163,5 +206,17 @@ hr {
 
 
 .div-tool {
-    border: 2px solid red;
+    background-color: rgb(255, 236, 174);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-tool {
+    width: 150px;
+}
+
+.miniSubtitle {
+    color: black;
+    margin: 10px 0;
 }
